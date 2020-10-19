@@ -11,4 +11,4 @@ Go the root folder and In the terminal of VS code,run the below commands in orde
   ii)npm start
   
   Then it will redirect you to the localhost nodejs server,3000 port in your system.
-  If it doesnt get redirected on it's own,just type in any browser the following url "http://localhost:3000",you can see the web app running with your localhost node server setup.
+  If it doesnt get redirected on it's own,just type in any browser the following url "http://localhost:3000" ,you can see the web app running with your localhost node server setup.

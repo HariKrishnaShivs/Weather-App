@@ -1,0 +1,9 @@
+.dyntext{
+    margin-top:20vh;
+    background-color: rgb(255, 0, 85,0.5);
+    color:white;
+    position: center;
+    width:50%;
+    height:60vh;
+    margin-left:20%;
+}

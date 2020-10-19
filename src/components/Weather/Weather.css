@@ -1,0 +1,82 @@
+.bg{
+    background-image: url('./../../assets/images/bg10.jpg');
+    min-height: 100vh;
+    background-size: 100% 100%;
+    overflow: auto;
+}
+
+.tbstyle{
+    margin-top:5vh;
+    margin-left:8%;
+    text-align:center;
+    padding-left:20px;
+    padding-right:20px;
+    width:90%;
+    height:90vh;
+    /*background-image:url('./../../assets/images/img5.jpg');
+    background-size: 120% 100%;*/
+    background-color:rgb(192, 255, 213);
+    border-radius: 20px;
+}
+
+
+.img5style{
+  width:100%;
+  height:50vh;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+.inp1{
+    width:100%;
+    height:7vh;
+    padding-left:10px;
+    border-radius:20px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+.inp1::placeholder{
+    text-align: left;
+}
+
+.inp1:focus{
+    outline: none;
+}
+
+.clrbtn{
+    background-color: pink;
+}
+
+.lbltxt{
+    font-size: 12px;
+    color:red;
+    text-align: center;
+}
+
+.extbtn{
+    color: blue;
+    background-color: inherit;
+    padding-left:5px;
+    padding-right:5px;
+    margin-top:20px;
+    border:none;
+    text-decoration: underline;
+}
+
+.extbtn:focus{
+    outline:none;
+}
+
+.btn1{
+    position:absolute;
+    right:15%;
+}
+
+.btn2{
+    position:absolute;
+    right:5%;
+}
+
+

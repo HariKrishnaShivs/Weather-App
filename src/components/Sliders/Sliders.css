@@ -1,6 +1,8 @@
 .slide{
     height:80vh;
     width:100%;
+    background-image:url('./../../assets/images/sunny.png');
+    background-size: 100% 100%;
 }
 
 .bs{

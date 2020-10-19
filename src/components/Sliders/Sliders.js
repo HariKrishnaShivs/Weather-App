@@ -15,13 +15,14 @@ import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import './Sliders.css';
 import Calendar from 'react-calendar';
+import APIKEY from './../../.gitignore/hello';
 
 class Sliders extends Component{
     constructor(){
         super();
         SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
         this.state={
-            API:'478f2269cbeb8bb60f6242a5712b4f32',
+            API:'',
             s:"0",
             assign:0,
             obj:{},
@@ -29,6 +30,7 @@ class Sliders extends Component{
             datepdetails:""
         }
     }
+
 
     /*componentDidMount(){
       //document.getElementById("s1").innerHTML="Hello guys";
@@ -52,17 +54,22 @@ class Sliders extends Component{
         });
     }
 
+    componentWillMount(){
+        this.setState({API:APIKEY});
+    }
+
     func=()=>{
         
             if(this.state.assign===0)
             {
-             fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${this.props.location.params.city}&appid=${this.state.API}&units=metric&lang=en`)
-            .then(res=>res.json())
-            .then(res=>{
-                //document.getElementById("s1").innerHTML=res.list[0].main.temp;
-                console.log(res);
-                this.setState({obj:res,assign:1});
-            });
+
+                    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${this.props.location.params.city}&appid=${this.state.API}&units=metric&lang=en`)
+                    .then(res=>res.json())
+                    .then(res=>{
+                        //document.getElementById("s1").innerHTML=res.list[0].main.temp;
+                        console.log(res);
+                        this.setState({obj:res,assign:1});
+                    });
               }
           else
             {

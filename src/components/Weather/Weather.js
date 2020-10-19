@@ -3,6 +3,7 @@ import './Weather.css'
 import img5 from './../../assets/images/img5.jpg';
 import { NavLink ,Link} from 'react-router-dom';
 import Dynam from './../Dynam/Dynam.js'
+import APIKEY from './../../.gitignore/hello';
 
 
 
@@ -12,10 +13,17 @@ class Weather extends Component{
         super();
         this.state={
            city:'',
-           API:'478f2269cbeb8bb60f6242a5712b4f32',
+           API:'',
            tempr:'',
            data:''
         }
+    }
+
+    componentDidMount()
+    {
+        this.setState({API:APIKEY},()=>{
+            console.log(`${this.state.API}`);
+        })
     }
     func=(e)=>{
         this.setState({city:e.target.value});
